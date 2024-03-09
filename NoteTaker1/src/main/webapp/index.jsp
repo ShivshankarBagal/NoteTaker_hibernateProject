@@ -14,9 +14,13 @@
 	<div class="container">
 	
 	 <%@include file="navbar.jsp" %>
-	 <br>
- <h1>This is Home page</h1>
+	 
 
+	</div>
+	
+	<div class="card  py-5 text-center" style="width:1200px ">
+	<img alt="" class="imf-fluid mx-auto" style="max-width:400px"  src="img/note.png">
+	<h1 class=" text-primary text-uppercase text-center">Start writing your notes</h1>
 	</div>
    
   </body>

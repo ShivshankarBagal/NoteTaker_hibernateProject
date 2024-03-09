@@ -36,23 +36,24 @@
     	%>
     	
     	<div class="card mt-3" >
-    	<img class="card-img-top m-4"  style="max-width:70px" src="img/note.png" alt="Card image cap">
+    	<img class="card-img-top m-4 mx-auto"  style="max-width:70px" src="img/note.png" alt="Card image cap">
  
-  <div class="card-body">
+  <div class="card-body px-5">
     <h5 class="card-title"><%= note.getTitle() %></h5>
     <p class="card-text">
      <%= note.getContent() %>
     </p>
-    <a href="#" class="btn btn-danger">Delete</a>
+    <div class="container text-center mt-2">
+     <a href="DeleteServlet?note_id=<%= note.getId() %>" class="btn btn-danger">Delete</a>
+    <a href="edit.jsp?note_id=<%=note.getId() %>" class="btn btn-primary">Update</a>
+    </div>
   </div>
 </div>
     	
   
    <%
     }
-    
-    
-   
+           
        s.close();
    %>
     
